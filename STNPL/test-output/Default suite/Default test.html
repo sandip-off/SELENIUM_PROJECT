@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 21 22:21:20 IST 2025</td>
+<td>Started on:</td><td>Mon Aug 25 16:31:18 NPT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27111 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15234 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.CFR_001()'><b>CFR_001</b><br>Test class: com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment<br>Test method: create subsidy req without accesories and with 100 payment </td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=139.0.7258.128)
+<td title='com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest.testEligibleRequest()'><b>testEligibleRequest</b><br>Test class: com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest<br>Test method: Test processing eligible request</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[.=&apos;Eligible&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8928b762ec1424e81167b8692dd7f773, findElement {using=xpath, value=//input[@name=&apos;address&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49177/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8928b762ec1424e81167b8692dd7f773
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9f08af80-e556-4738-88f2-aa3f83108c23, findElement {using=xpath, value=//button[.=&apos;Eligible&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36308, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9f08af80-e556-4738-88f2-aa3f83108c23
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -100,9 +99,8 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.selenium.qa.set4npl.objects.CreateFundRequestPage.enterAddress(CreateFundRequestPage.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.common(T01_CreateFundReq.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.CFR_001(T01_CreateFundReq.java:95)
+	at com.selenium.qa.set4npl.objects.HandlingBankFlowUtility.processEligibleRequest(HandlingBankFlowUtility.java:58)
+	at com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest.testEligibleRequest(T02HandlingBankFlowTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -129,16 +127,15 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1895479349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1895479349'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=139.0.7258.128)
+</pre></div><a href='#' onClick='toggleBox("stack-trace178604517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace178604517'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[.=&apos;Eligible&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8928b762ec1424e81167b8692dd7f773, findElement {using=xpath, value=//input[@name=&apos;address&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49177/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8928b762ec1424e81167b8692dd7f773
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9f08af80-e556-4738-88f2-aa3f83108c23, findElement {using=xpath, value=//button[.=&apos;Eligible&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36308, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9f08af80-e556-4738-88f2-aa3f83108c23
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -153,9 +150,8 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.selenium.qa.set4npl.objects.CreateFundRequestPage.enterAddress(CreateFundRequestPage.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.common(T01_CreateFundReq.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.CFR_001(T01_CreateFundReq.java:95)
+	at com.selenium.qa.set4npl.objects.HandlingBankFlowUtility.processEligibleRequest(HandlingBankFlowUtility.java:58)
+	at com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest.testEligibleRequest(T02HandlingBankFlowTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -183,8 +179,8 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>17</td>
-<td>com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment@7c7a06ec</td></tr>
+<td>10</td>
+<td>com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest@3754a4bf</td></tr>
 </table><p>
 </body>
 </html>

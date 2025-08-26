@@ -29,8 +29,8 @@ public class Login extends Base{
 		}
 		else if (role.equals("handlingbnk"))
 				{
-			driver.findElement(By.xpath("//input[@name='email']")).sendKeys("nabil@yopmail.com");
-			driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Admin@123");
+			driver.findElement(By.xpath("//input[@name='email']")).sendKeys("handlingbank@yopmail.com");
+			driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Password@123");
 			
 				}
 		else if(role.equals("admin"))

@@ -17,7 +17,8 @@ public class T02HandlingBankFlowTest extends Login {
    @BeforeMethod
    public void setup() throws InterruptedException {
         // Initialize the driver
-      //  driver = initializeBrowserAndOpenApplication("edge");
+        driver = initializeBrowserAndOpenApplication("firefox");
+        driver=loginAs("handlingbank");
         
         // Create instance of utility class
      handlingBankFlow= new HandlingBankFlowUtility(driver);
@@ -35,7 +36,7 @@ public class T02HandlingBankFlowTest extends Login {
     
    @Test(priority = 1, description = "Test processing eligible request")
     public void testEligibleRequest() throws InterruptedException, AWTException {
-    	handlingBankFlow.setup();
+    //	handlingBankFlow.setup();
     	
         handlingBankFlow.processEligibleRequest();
     }

@@ -9,19 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">27,111</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,234</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment</td><td><a href="#m0">CFR_001</a></td><td rowspan="1">1755795089839</td><td rowspan="1">17832</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest</td><td><a href="#m0">testEligibleRequest</a></td><td rowspan="1">1756118782863</td><td rowspan="1">10026</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment#CFR_001</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=139.0.7258.128)
+<h2>Default test</h2><h3 id="m0">com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest#testEligibleRequest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[.=&apos;Eligible&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8928b762ec1424e81167b8692dd7f773, findElement {using=xpath, value=//input[@name=&apos;address&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49177/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8928b762ec1424e81167b8692dd7f773
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9f08af80-e556-4738-88f2-aa3f83108c23, findElement {using=xpath, value=//button[.=&apos;Eligible&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36308, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9f08af80-e556-4738-88f2-aa3f83108c23
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -36,9 +35,8 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.selenium.qa.set4npl.objects.CreateFundRequestPage.enterAddress(CreateFundRequestPage.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.common(T01_CreateFundReq.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.CFR_001(T01_CreateFundReq.java:95)
+	at com.selenium.qa.set4npl.objects.HandlingBankFlowUtility.processEligibleRequest(HandlingBankFlowUtility.java:58)
+	at com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest.testEligibleRequest(T02HandlingBankFlowTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

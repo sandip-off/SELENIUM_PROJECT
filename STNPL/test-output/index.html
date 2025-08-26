@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\User\AppData\Local\Temp\testng-eclipse-1373603793\testng-customsuite.xml</span>
+                    <span>C:\Users\LENOVO\AppData\Local\Temp\testng-eclipse-1860158628\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment" class="method navigator-link" hash-for-method="CFR_001">CFR_001</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest" class="method navigator-link" hash-for-method="testEligibleRequest">testEligibleRequest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,23 +121,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment</span>
+              <span class="class-name">com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CFR_001">
-                  </a> <!-- CFR_001 -->
-                  <span class="method-name">CFR_001</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: not connected to DevTools
-  (Session info: chrome=139.0.7258.128)
+                  <a name="testEligibleRequest">
+                  </a> <!-- testEligibleRequest -->
+                  <span class="method-name">testEligibleRequest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //button[.=&apos;Eligible&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.30.0&apos;, revision: &apos;509c7f17cc*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8928b762ec1424e81167b8692dd7f773, findElement {using=xpath, value=//input[@name=&apos;address&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49177}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49177/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8928b762ec1424e81167b8692dd7f773
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9f08af80-e556-4738-88f2-aa3f83108c23, findElement {using=xpath, value=//button[.=&apos;Eligible&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 36308, moz:profile: C:\Users\LENOVO\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 9f08af80-e556-4738-88f2-aa3f83108c23
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -152,9 +151,8 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at com.selenium.qa.set4npl.objects.CreateFundRequestPage.enterAddress(CreateFundRequestPage.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.common(T01_CreateFundReq.java:79)
-	at com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment.CFR_001(T01_CreateFundReq.java:95)
+	at com.selenium.qa.set4npl.objects.HandlingBankFlowUtility.processEligibleRequest(HandlingBankFlowUtility.java:58)
+	at com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest.testEligibleRequest(T02HandlingBankFlowTest.java:41)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -184,7 +182,7 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 
 </div> <!-- stack-trace -->
                   <em>
-(create subsidy req without accesories and with 100 payment )                  </em>
+(Test processing eligible request)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,7 +190,7 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\User\AppData\Local\Temp\testng-eclipse-1373603793\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\LENOVO\AppData\Local\Temp\testng-eclipse-1860158628\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -201,11 +199,11 @@ Session ID: 8928b762ec1424e81167b8692dd7f773
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment&quot;&gt;
+      &lt;class name=&quot;com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;CFR_001&quot;/&gt;
+          &lt;include name=&quot;testEligibleRequest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment --&gt;
+      &lt;/class&gt; &lt;!-- com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -247,14 +245,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CFR_001')
-data.setCell(0, 2, 'com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment')
-data.setCell(0, 3, 17832);
+data.setCell(0, 1, 'testEligibleRequest')
+data.setCell(0, 2, 'com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest')
+data.setCell(0, 3, 10026);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -269,15 +267,17 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment</span>
+              <span class="ignored-class-name">com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">CFR_002</span>
+                <span class="ignored-method-name">testIncompleteRequest</span>
                 <br/>
-                <span class="ignored-method-name">CFR_003</span>
+                <span class="ignored-method-name">testReportRequest</span>
+                <br/>
+                <span class="ignored-method-name">testRejectedRequest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -289,7 +289,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.selenium.qa.set4npl.empsuplier.fundreq.T01_CreateFundReqWithFullPayment</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.selenium.qa.set4npl.empsuplier.fundreq.T02HandlingBankFlowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
@@ -297,12 +297,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">CFR_001</span>
-                <span class="method-start">8863 ms</span>
+                <span class="method-name">testEligibleRequest</span>
+                <span class="method-start">4500 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">26723 ms</span>
+                <span class="method-start">14530 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
